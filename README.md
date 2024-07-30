@@ -14,26 +14,23 @@ dependencies:
 # Usage
 
 ```bash
-import 'package:image_masking_flutter/image_masking_flutter.dart';
+import 'package:image_masking_flutter/image_masking_widget.dart';
 ```
 
 # GIF
 
-<img src="https://github.com/user-attachments/assets/353b6d19-5f55-4437-9d7b-4fa57b9ca73d" width="300" height="650"/>
+<img src="https://github.com/user-attachments/assets/353b6d19-5f55-4437-9d7b-4fa57b9ca73d" width="300" height="600"/>
 
 # Example
 
+Create a GlobalKey
+
 ```bash
-
-  ///* Create a GlobalKey *///
-
-
   final GlobalKey<ImageMaskingWidgetState> _imageMaskingKey = GlobalKey<ImageMaskingWidgetState>();
+```
+Use Image Masking Widget
 
-
-  ///* Use the below widget with properties according to your requirements *///
-
-
+```bash
   ImageMaskingWidget(
       key: _imageMaskingKey,
       height: MediaQuery.of(context).size.height/2,
@@ -41,16 +38,14 @@ import 'package:image_masking_flutter/image_masking_flutter.dart';
       margin: EdgeInsets.symmetric(vertical: MediaQuery.of(context).size.height/4,horizontal: 15),
       decoration: BoxDecoration(
           border: Border.all(color: Colors.black, width: 2)),
-      coloredImage: "assets/images/kid_color.jpeg",
-      unColoredImage: "assets/images/kid_uncolor.jpeg",
+      coloredImage: "assets/images/kid_color.jpeg", //Use colored image here
+      unColoredImage: "assets/images/kid_uncolor.jpeg", //Use outlined image without color with same size & resolution according to above colored image
     )
+```
+Reset the view
 
-
-   ///* For reset the view *///
-
+```bash
    _imageMaskingKey.currentState?.resetView();
-
-
 ```
 
 ## Author
