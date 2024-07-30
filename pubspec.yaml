@@ -1,6 +1,6 @@
 name: image_masking_flutter
 description: The Image Masking Flutter Plugin allows developers to create an interactive image reveal effect.
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/Sohit-Sharma/image_masking_flutter
 
 environment:
